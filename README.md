@@ -78,16 +78,23 @@
 
 ---
 
-## 🌐 Despliegue en GitHub Pages
+## 🌐 Opciones de Despliegue en GitHub Pages
 
-Este repositorio cuenta con un flujo automatizado de CI/CD en `.github/workflows/deploy.yml`.
+Tienes disponibles **dos métodos** para desplegar la plataforma:
 
-Para activarlo en GitHub:
-1. Dirígete a la pestaña **Settings** de tu repositorio en GitHub.
-2. En la barra lateral izquierda, selecciona **Pages**.
-3. En la sección **Build and deployment > Source**, selecciona **GitHub Actions**.
-4. ¡Listo! Cada `git push` a la rama `main` compilará y publicará automáticamente el sitio en:
-   **`https://00gus.github.io/APEX-ROBOTICS/`**
+### Opción 1: GitHub Actions (Recomendado y Automatizado)
+1. En GitHub, ve a **Settings** > **Pages**.
+2. En **Build and deployment > Source**, selecciona **GitHub Actions**.
+3. Cada vez que hagas `git push` a `main`, GitHub compilará y publicará la web automáticamente.
+
+### Opción 2: Deploy from a branch (Rama `gh-pages`)
+Si prefieres el método clásico de rama:
+1. En GitHub, ve a **Settings** > **Pages**.
+2. En **Build and deployment > Source**, selecciona **Deploy from a branch**.
+3. En **Branch**, selecciona la rama **`gh-pages`** y la carpeta **`/(root)`**, luego haz clic en **Save**.
+
+En ambos casos tu página estará en vivo en:
+👉 **[https://00gus.github.io/APEX-ROBOTICS/](https://00gus.github.io/APEX-ROBOTICS/)**
 
 ---
 
